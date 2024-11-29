@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
@@ -7,6 +8,9 @@
     <title>Luxo - Contato</title>
     <link rel="shortcut icon" href="images/barco2.png" type="image/x-icon" />
     <link rel="stylesheet" href="css/default.css" />
+    <script src="../projeto-iates/js/jquery-3.6.4.min.js"></script>
+<script src="../projeto-iates/js/api.js"></script>
+<script src="../projeto-iates/js/mensagem.js" defer></script>
   </head>
 
   <body>
@@ -37,30 +41,30 @@
         <h2>Entre em contato</h2>
       </div>
 
-      <form>
+      <form id="form">
         <div class="entry">
-          <label for="nome">Nome</label>
-          <input type="text" id="nome" />
+          <label for="name">Nome</label>
+          <input type="text" id="nome" name="name" />
         </div>
 
         <div class="entry">
-          <label for="email">E-mail</label>
-          <input type="email" id="email" />
+          <label for="e-mail">E-mail</label>
+          <input type="email" id="email" name="e-mail" />
         </div>
 
         <div class="entry">
           <label for="msg">Mensagem</label>
           <textarea cols="40" rows="7" id="msg"></textarea>
         </div>
-        
         <div class="buttons">
-        <button class="button">Enviar</button>
-      </div>
-    </form>
+          <button class="button" type="submit">Enviar</button>
+        </div>
+      </form>
+
+
     </main>
     </div>
-    <script src="js/jquery-3.6.4.min.js"></script>
-    <script src="js/api.js"></script>
+
     <footer>
       <p>© 2023 por Luxo aluguel de iates</p>
     </footer>

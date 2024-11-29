@@ -4,9 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Luxo - Tripulação</title>
+    <title>Luxo - Admin</title>
     <link rel="shortcut icon" href="images/barco2.png" type="image/x-icon" />
     <link rel="stylesheet" href="css/default.css" />
+    <script src="../projeto-iates/js/jquery-3.6.4.min.js"></script>
+<script src="../projeto-iates/js/api.js"></script>
+<script src="../projeto-iates/js/admin.js" defer></script>
   </head>
 
   <body>
@@ -16,7 +19,7 @@
         <img src="images/barco1.png" alt="ícone de barco" />
         <div class="headtitle">
           <h1>Luxo</h1>
-          <h2>Aluguel de iates</h2>
+          <h2>Administração</h2>
         </div>
       </div>
 
@@ -25,8 +28,9 @@
           <li><a href="index.html">Página inicial</a></li>
           <li><a href="aluguel.html">Aluguel de iates</a></li>
           <li><a href="destinos.html">Destinos</a></li>
-          <li><a href="tripulacao.html" class="accent">Tripulação</a></li>
+          <li><a href="tripulacao.html">Tripulação</a></li>
           <li><a href="contato.html">Contato</a></li>
+          <li><a href="admin.html" class="accent">Login</a></li>
         </ul>
       </nav>
     </header>
@@ -34,14 +38,26 @@
     <main>
       <div class="pagtitle">
         <div class="bgtitle"></div>
-        <h2>Tripulação</h2>
+        <h2>Login</h2>
       </div>
-      <section class="trip">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus ex eligendi doloremque obcaecati, esse tempore. Enim, repellendus eum magni sint ex sed aut nihil, tempora maiores tempore est nulla incidunt! Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita quibusdam eveniet quidem odit impedit nam? Velit amet quia culpa debitis maxime error dolore, harum assumenda omnis recusandae deleniti adipisci tenetur!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, sed deserunt! Impedit accusantium sapiente iste officia accusamus iure aut id sed nobis, dignissimos saepe perferendis sunt dolores totam pariatur in.</p>
-      </section>
+
+      <form id="form">
+          <div class="entry">
+            <label for="e-mail">E-mail</label>
+            <input type="email" id="email" name="e-mail" />
+          </div>
+        <div class="entry">
+          <label for="name">Senha</label>
+          <input type="text" id="nome" name="name" />
+        </div>
+        <div class="buttons">
+          <button class="button" type="submit">Enviar</button>
+        </div>
+      </form>
+
+
     </main>
-  </div>
+    </div>
 
     <footer>
       <p>© 2023 por Luxo aluguel de iates</p>
